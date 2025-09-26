@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> pfn.tech - Eletrônica & Impressão 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pfn.tech</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner">
+      <h2>Soluções em Eletrônica & Impressão 3D</h2>
+      <p>Peças, acessórios e inovação para seus projetos.</p>
+      <button onclick="saibaMais()">Saiba Mais</button>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos em Destaque</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Produto 1">
+          <h3>Sensor XYZ</h3>
+          <p>Alta precisão para seus projetos.</p>
+          <button onclick="adicionarCarrinho('Sensor XYZ')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Produto 2">
+          <h3>Filamento PLA 1kg</h3>
+          <p>Ideal para impressão 3D de alta qualidade.</p>
+          <button onclick="adicionarCarrinho('Filamento PLA 1kg')">Adicionar</button>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200" alt="Produto 3">
+          <h3>Kit Arduino</h3>
+          <p>Perfeito para iniciantes em eletrônica.</p>
+          <button onclick="adicionarCarrinho('Kit Arduino')">Adicionar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Pfn.tech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
